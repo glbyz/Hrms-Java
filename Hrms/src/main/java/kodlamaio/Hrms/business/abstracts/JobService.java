@@ -2,8 +2,12 @@ package kodlamaio.Hrms.business.abstracts;
 
 import java.util.List;
 
+import kodlamaio.Hrms.core.utilities.results.DataResult;
+import kodlamaio.Hrms.core.utilities.results.Result;
 import kodlamaio.Hrms.entities.concretes.Job;
 
 public interface JobService {
-	List<Job> getAll();
+	DataResult <List<Job>> getAll();
+	Result add(Job job);
+	
 }
